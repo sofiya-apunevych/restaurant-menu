@@ -78,3 +78,14 @@ button{
 .price{
    font-size: 20px;  
 }
+
+.order-box{
+    display:block;
+    width: 600px;
+    margin: 0 auto;
+    font-size: 40px;
+}
+
+.hidden{
+    display:none;
+}

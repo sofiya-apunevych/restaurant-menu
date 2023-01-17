@@ -1,20 +1,29 @@
-!!write some code with  -- data-"name" = menuArray.id (0for of ; forEach)
+
 
 import {menuArray} from "./data.js"
 
-console.log(menuArray[0].name)
-let count = 0
- let increment-btn-${arr.id} = document.getElementById("")
+//console.log(menuArray[0].name)
+//let count = 0
+ 
+document.addEventListener("click", function(e){
+    if(e.target.dataset.increment){
+     increment(e.target.dataset.increment)   
+    }})
 
 function increment(num){
-   
-    let targetMeal = menuArray.filter(meal => meal.id ===num)[0]
-    targetMeal.
+    document.getElementById(`order-box-${num}`).classList.toggle("hidden")
+    
+    
+/*    let incrementBtn= document.getElementById(`increment-btn-${num}`)
+   let targetMeal = menuArray.filter(meal => meal.id === num)[0]
+console.log(`I am ${meal.id}`) */
+console.log(num)
 }
 
 function getbodyMenu(){
 
 let bodyMenu = ''
+let orderList = ''
 menuArray.forEach(function(arr){
     
 bodyMenu += `
@@ -31,12 +40,18 @@ bodyMenu += `
         </div>
         
         <div class="button">
-            <button id="increment-btn-${arr.id}" onclick="increment(num)">+</button>
+            <button id="increment-btn-${arr.id}" data-increment="${arr.id}">+</button>
         </div>
 </div>
 `
+orderList +=`
+        <div id ="order-box-${arr.id}" class="order-box hidden">
+        <p id = "order-list">Your order ${arr.id}</p>   
+        </div>
+ 
+`
 })
-return bodyMenu
+return [bodyMenu, orderList]
 }
 
 function render(){
