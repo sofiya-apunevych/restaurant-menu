@@ -1,4 +1,3 @@
-
 export const menuArray = [
     {
         name: "Pizza",
