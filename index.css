@@ -3,14 +3,15 @@ body {
     font-family: 'Smythe', cursive;
 } 
 
-.header{
+.header,
+.main-box{
     display: block;
-    margin: 10px auto ;
+    margin: 0 auto ;
     width: 600px;
     height: 167px;
     position:relative;
+    padding:0px;
 }
-
 
 .img-text{
     position: absolute;
@@ -28,13 +29,20 @@ body {
 .body-menu{
    width: 600px; 
    margin: 52px auto; 
+   
+}
+
+body-area{
+   width: 508px; 
+    display: block;
+    margin: 0 auto;   
 }
 
 .set{
     width: 508px; 
     display: block;
     margin: 52px auto; 
-    padding: 0 0 52px 0;
+    padding: 0 0 52px 0; 
     border-bottom: 1px solid rgb(139, 139, 139);
     
     display: flex;
@@ -57,7 +65,7 @@ span.emoji{
     margin: 20px 10px 0px auto;
 }
 
-button{
+button.increment-btn{
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -83,17 +91,126 @@ button{
 .order-total-price
 {
     display:block;
-    width: 600px;
+    width: 508px;
     margin: 0 auto;
-    font-size: 40px;
+   
+}
+
+.order-box,
+.total-price,
+.caption-render{
+    font-size:28px;
+}
+
+.order-box{
+   line-height:17px;
+   padding: 11px; 
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.price-end-of-string{
+    padding-left:0px; 
+    margin-right: 40px;
+}
+
+.order-box-anchor{
+    padding-bottom: 30px; 
+    margin: 30px 50px;
+}
+
+.removed{
+    font-size: 12px;
+    color: #BBBBBB;
+    align-self:  center;
 }
 
 /* Hidden or visible */
 
-
- 
 .hidden{
     display:none;
 } 
 
+.caption-render{
+    text-align:center;
+}
 
+aside{
+    margin: 10px auto ;
+    width: 600px;
+    height: 167px; 
+}
+
+.complete-order,
+.form-buy{
+    display: none;
+    margin: 46px auto;
+    align-items: center;
+    width:508px;
+    height:60px;
+    background-color: #16DB99;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px; 
+}
+
+ input .form-buy{
+    width:508px;
+    margin-left: 0; 
+} 
+
+.pop-up-form{
+    display:none;
+    position:fixed;
+     top: 0;
+    left: 0;
+    right:0;
+    bottom:0; 
+    margin: 38px auto;
+    width: 524px;
+    height: 542px;
+}
+
+form input{
+    display:block;
+    margin: 20px auto;
+    width: 476px;
+    border: 1px solid #757575;
+    padding: 15px;   
+}
+ 
+.form-caption{
+    font-family:  verdana;
+    text-align:center; 
+    margin: 50px auto;
+    width:500px;   
+} 
+
+.total-price{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-right: 10px;
+}
+
+.thanks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 46px auto;
+    width: 504px;
+    height: 120px;
+    background-color:#ECFDF5;
+    color:#065F46;
+    font-size:32px;
+}
+
+.form-name,
+.form-number,
+.form-cvv{
+    border-radius:3px;
+}

@@ -1,14 +1,16 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link rel="stylesheet" href="index.css">
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="index.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,500&family=Smythe&family=Source+Sans+Pro:ital,wght@0,300;0,700;1,300;1,700&display=swap"
 	 rel="stylesheet">
-    </head>
-    <body>
-    <header class="header">
-		<div>
+</head>
+
+<body id="body-area" class="body-area">
+	<header class="header">
+		<div class="div-image">
 			<img src='./image/bg_img.jpg' alt='burger'>
 		</div>
 
@@ -18,35 +20,59 @@
 		</div>
 
 	</header>
-    
-     <main>
-        
-        <div id="body-menu-anchor" class="body-menu " >
-            <!-- content here -->
-        </div>
-        
-        
-          <div id="caption-anchor" class="caption hidden" >
-            <!-- content here -->
-        </div> 
-       
-       
-       <div id='order-box-anchor' class='order-box hidden'>
-            <!-- content here -->
-        </div>
-       
-        
-        <div id="order-total-price-anchor"  class="order-total-price hidden" >
-             <!-- content here -->
-        </div>
-     
-    </main>
+
+	<main id="main-box" class="main-box">
+		<div id="shade" class="shade">
+
+			<div id="body-menu-anchor" class="body-menu ">
+				<!-- content here -->
+			</div>
 
 
-        
-        
-        
-	<script src="index.js" type =" module"></script>
-    </body>
+			<div id="caption-anchor" class="caption hidden">
+				<!-- content here -->
+			</div>
+
+
+			<div id='order-box-anchor' class='order-box-anchor hidden'>
+				<!-- content here -->
+			</div>
+
+
+			<div id="order-total-price-anchor" class="order-total-price hidden">
+				<!-- content here -->
+			</div>
+
+			<button id="complete-order" class="complete-order">Complete Order</button>
+		</div>
+	</main>
+
+	<aside>
+		<div id="pop-up-form" class="pop-up-form">
+			<h2 id="form-caption" class="form-caption">Enter card details</h2>
+
+			<form id="form-box" class="form-box">
+				<input type="text" id="form-name" class="form-name" name="name" placeholder="Enter your name" required>
+
+				<input type="text" id="form-number" class="form-number" name="number" placeholder="Enter card number" required>
+
+				<input type="text" id="form-cvv" class="form-cvv" name="cvv" placeholder="Enter CVV" required>
+
+				<input type="submit" id="form-buy" class="form-buy" name="buy" value="Pay">
+
+			</form>
+		</div>
+
+
+		<div id="thanks-box" class="thanks-box">
+			<!--  some greating here -->
+		</div>
+
+	</aside>
+
+
+
+	<script src="index.js" type="module"></script>
+</body>
+
 </html>
-
